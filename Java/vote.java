@@ -11,13 +11,13 @@ public class Main{
 	int year = (18 - age) + 2025;
 	
 	if(age < 18 && age >= 0){
-	    System.out.printf("Not eligible to vote. You will be eligible to vote in %d. \n", year);
+	    System.out.printf("Not eligible to vote. You will be eligible in %d. \n", year);
 	}
 	else if(age < 0 || age > 150){
 	    System.out.println("Number is out of range");
 	}
 	else{
-	    System.out.printf("Eligible to vote. You were eligible to vote in %d. \n", year);
+	    System.out.printf("Eligible to vote. You were eligible in %d. \n", year);
 	}
 	kage.close();
     }

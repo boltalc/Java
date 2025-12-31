@@ -1,6 +1,6 @@
 public class Main{
     public static void main(String[] args){
-	int [][] age = {{2,3,4,5},{6,7,8,9},{1,9,5,3}};
+	int [][] age = {{2,3,4},{6,7,8},{1,9,5},{5,9,3}};
 	int i,j;
 
 	for(i = 0; i < age.length; i++){

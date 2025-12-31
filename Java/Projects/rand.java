@@ -8,7 +8,24 @@ public class Main{
 	System.out.print("Guess a number between 1 and 100: ");
 	int x = input.nextInt();
 
-	int y = dice.nextInt(100);	
+	int y = dice.nextInt(100);
+
+	int z = 0;
+
+	while(x > y || x < y){
+	    if(x == y){
+		System.out.println("Correct!!!");
+		break;
+	    }
+	    else if(x > y){
+		System.out.println("Too high");
+		break;
+	    }
+	    else{
+		System.out.println("Too low");
+	    }
+	    z++;
+	}
 
 	System.out.printf("%d %d", x, y);
 	
