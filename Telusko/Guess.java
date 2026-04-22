@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Guess{
+    public static void main(String[] args){
+	Scanner guess = new Scanner(System.in);
+	System.out.printf("Select game difficulty:%nType 'E' for easy%nType 'M' for medium%nType 'H' for hard%n");
+	char dif = guess.next().charAt(0);
+	int x = 0;
+	if(dif == 'E' || dif == 'e'){
+	    x = (int)(Math.random() * 10);
+	}
+	else if(dif == 'M'|| dif == 'm'){
+	    x = (int)(Math.random() * 50);
+	}
+	else if(dif == 'H' || dif == 'h'){
+	    x = (int)(Math.random() * 100);
+	}
+	else{
+	    System.out.println(dif + " is not a difficulty");
+	}
+
+       	System.out.println("Enter a Number");
+	int y;
+	do{
+       	y = guess.nextInt();
+
+       	int a = 0;
+       	if(y == x){
+	    System.out.println("Guessed correctly");
+       	}
+       	else if(y > x){
+	    System.out.println("Too high");	    
+       	}
+       	else if(y < x){
+	    System.out.println("Too low");	    
+       	}
+	
+	}
+       	while(y != x);
+}
+}

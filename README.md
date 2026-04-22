@@ -1,1 +1,1 @@
-This is a Repo I created to document my learning of Java and Nodejs.
+This is a Repo I created to document my Java learning journey.
