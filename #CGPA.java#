@@ -7,7 +7,7 @@ public class CGPA{
 	int noOfCourses[] = new int[in.nextInt()];
 
 	for(int i = 0; i < noOfCourses.length; i++){
-	    noOfCourses[i] = in.nextLine();
+	    noOfCourses[i] = in.nextInt();
 	    System.out.println(noOfCourses[i]);
 	}
 
